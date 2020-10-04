@@ -1,0 +1,18 @@
+/*1,3,9,19 upto user input terms
+Iterate as you wish.*/
+import java.util.Scanner;
+public class OneThree
+{
+  public static void main(String args[])
+  {
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Enter the maximum iterating term");
+    int term = sc.nextInt(), final=1, increment, diff=2;
+    for(increment=1; increment<=term; increment++)
+    {
+      System.out.print(final);
+      final = final+diff;
+      diff = diff+4;
+    }
+  }
+}

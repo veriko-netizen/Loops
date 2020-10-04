@@ -1,0 +1,17 @@
+/*0,7,26,63 upto user input iteration.
+Iterate as you wish.*/
+import java.util.Scanner;
+public class CubeMinusOne
+{
+  public static void main(String args[])
+  {
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Enter the maximum iterating term");
+    int term = sc.nextInt(), increment, final;
+    for(increment=1; increment<=term; increment++)
+    {
+      final = (increment*increment*increment)-1;
+      System.out.print(final);
+    }
+  }
+}

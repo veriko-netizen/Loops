@@ -1,0 +1,27 @@
+//Print the Non-Fibonacci series up to user input iteration point
+public class Non-Fibonacci
+{
+  public static void main(String args[])
+  {
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Enter the iterating term");
+    int term = sc.nextInt();
+    int num1 = 0, num2 = 1, sum , increment1, increment2;
+    System.out.println(num1+" "+num2);
+    for(increment1 = 3; increment1 <= term; increment1++)
+    {
+      sum = num1+num2;
+      for(increment2 = num1+1; increment2 <=term; increment2++)
+      {
+        if(increment2 >= term)
+        {
+          System.out.println("It is a Non-Fibonacci number");
+        }
+        else
+        {
+          System.out.println("It is not a Non-Fibonacci number");
+        }
+      }
+    }
+  }
+}

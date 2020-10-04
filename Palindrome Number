@@ -1,0 +1,25 @@
+//Accept a number and check if it is a Palindrome number
+import java.util.Scanner;
+public class Palindrome
+{
+  public static void main(String args[])
+  {
+    Scanner sc = new Scanner(System.in);
+    int num = sc.nextInt();
+    int sto = num, sum = 0, digit;
+    while (sto > 0)
+    {
+      digit = sto % 10;
+      sum = (sum * 10) + digit;
+      sto = sto / 10;
+    }
+    if(sum == sto)
+    {
+      System.out.println("It is a Palindrome number");
+    }
+    else
+    {
+      System.out.println("It is not a Palindrome number");
+    }
+  }
+}

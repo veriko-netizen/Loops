@@ -1,0 +1,17 @@
+/*1,2,4,8,16 upto user input terms.
+Iterate comfortably.*/
+import java.util.Scanner;
+public class DoubleUp
+{
+  public static void mains(String args[])
+  {
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Enter the maximum term for iterating");
+    int term = sc.nextInt(), increment, final=1;
+    for(increment=1; increment<=term; increment++)
+    {
+      System.out.println(final);
+      final = final*2;
+    }
+  }
+}

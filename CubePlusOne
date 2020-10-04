@@ -1,0 +1,17 @@
+/*2,9,28,65 upto user input term.
+Do as you wish.*/
+import java.util.Scanner;
+public class CubePlusOne
+{
+  public static void main(String args[])
+  {
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Enter the number of times of iteration");
+    int term = sc.nextInt(), increment, final;
+    for(increment=1; increment<=term; increment++)
+    {
+      final = (increment*increment*increment)+1;
+      System.out.print(final);
+    }
+  }
+}

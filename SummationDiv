@@ -1,0 +1,23 @@
+//Summation of division of 2 numbers with increasing power. Eg. s = ((a/b)+((a*a)/(b*b) upto user input term)
+import java.util.Scanner;
+public class SummationofQuotients
+{
+  public static void main(String args[])
+  {
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Enter the first number");
+    double num1 = sc.nextDouble();
+    System.out.println("Enter the second number");
+    double num2 = sc.nextDouble();
+    System.out.println("Enter the iteration term");
+    double term = sc.nextDouble();
+    double increment, sum = 0.0, power1, power2;
+    for (increment = 1.0; increment <= term; increment++)
+    {
+      power1 = Math.pow(num1, increment);
+      power2 = Math.pow(num2, increment);
+      sum = sum + (power1/power2);
+    }
+    System.out.println(sum);
+  }
+}

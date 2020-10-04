@@ -1,0 +1,17 @@
+/*Factorial of numbers upto user input terms.
+Use a loop of your choice.*/
+import java.util.Scanner;
+public class FactorialSeries
+{
+  public static void main(String args[])
+  {
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Enter the maximum iteration point");
+    int term = sc.nextInt(), factorial=1, increment;
+    for(increment=1; increment<=term; increment++)
+    {
+      factorial= factorial*increment;
+      System.out.println(factorial);
+    }
+  }
+}

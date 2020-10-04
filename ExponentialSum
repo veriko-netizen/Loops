@@ -1,0 +1,34 @@
+/*Accept a number and print the sum upto user input iteration term. it should be displayed as follows:
+(((a*a)/2)-((a*a*a*a)/4)+((a*a*a*a*a*a)/6))*/
+import java.util.Scanner;
+public class ExpoSum
+{
+  public static void main(String args[])
+  {
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Enter the number whose exponential value has to be calculated");
+    double num = sc.nextDouble();
+    System.out.println("Enter the iteration point");
+    double term = sc.nextDouble();
+    double increment, initsum1=0.0, initsum2=0.0, finsum, count1=2.0, count2=2.0, power1, power2;
+    for(increment=1.0; increment<=term; increment++)
+    {
+      if(increment%2!=0)
+      {
+        power1 = Math.pow(num,count1);
+        count1 = count1 + 2.0;
+        initsum1 = initsum1 + (power1/count2);
+        count2 = count2 + 2.0;
+      }
+      else
+      {
+        power1 = Math.pow(num,count1);
+        count1 = count1 +2.0 ;
+        initsum2 = initsum2 + (power1/count2);
+        count2 = count2 + 2.0;
+      }
+    }
+    finsum = initsum1 - initsum2;
+    System.out.print(finsum);
+  }
+}

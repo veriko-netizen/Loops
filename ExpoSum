@@ -1,0 +1,22 @@
+/*Find the sum of term as per user input when raised to a certain index and divided by the sum of the index with a number increasing at an interval of 1.
+Should follow as mentioned : (((2^a)/(a+1))+((3^a)/(a+2)) and so on).*/
+import java.util.Scanner;
+public class ExpoSumDiv
+{
+  public static void main(String args[])
+  {
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Enter the index concerned");
+    double index = sc.nextDouble();
+    System.out.println("Enter the iteration term");
+    double term = sc.nextDouble();
+    double finsum=0.0, power, initsum, increment;
+    for(increment=1.0; increment<=term; increment++)
+    {
+      power = Math.pow((increment+1.0), index);
+      initsum = index + increment;
+      finsum = finsum + (power/initsum);
+    }
+    System.out.print(finsum);
+  }
+}
