@@ -1,0 +1,20 @@
+*/Exponential of a number
+Use either of the loops./*
+import java.util.Scanner;
+public class Exponential
+{
+  public static void main(String args[])
+  {
+    Scanner sc= new Scanner(System.in);
+    System.out.println("Enter the number whose exponential has to be calculated");
+    int num=sc.nextInt();
+    System.out.println("Enter the highest power to be raised");
+    int power=sc.nextInt();
+    int pro=1, i;
+    for(i=1; i<=power; i++)
+    {
+      pro=pro*i;
+    }
+    System.out.println("The outcome is:"+pro);
+  }
+}

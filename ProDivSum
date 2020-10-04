@@ -1,0 +1,18 @@
+//Sum of (((1*2)/(1+2))+((1*2*3)/(1+2+3))) upto user input iteration point.
+import java.util.Scanner;
+public class ProDivSum
+{
+  public static void main(String args[])
+  {
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Enter the number of times the iteration has to be repeated");
+    double term = sc.nextDouble(), sum=0.0, increment, initsum=0.0, prod=1.0;
+    for(increment=1.0; increment<=term; increment++)
+    {
+      initsum = initsum + (increment+(increment+1));
+      prod = prod * (increment*(increment+1));
+      sum = sum + (prod/initsum);
+    }
+    System.out.print(sum);
+  }
+}

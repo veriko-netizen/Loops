@@ -1,0 +1,28 @@
+//Accept a number and check if it is a Duck number.
+import java.util.Scanner;
+public class Duck
+{
+  public static void main(String args[])
+  {
+  Scanner sc = new Scanner(System.in);
+  int num = sc.nextInt();
+  int digit, count = 0;
+  while(num>0)
+  {
+    digit = num%10;
+    num = num/10;
+    if(digit==0)
+    {
+      count = count + 1;
+    }
+    if(count >=1)
+    {
+      System.out.println("It is a Duck number");
+    }
+    else
+    {
+      System.out.println("It is not a Duck number");
+    }
+  }
+  }
+}

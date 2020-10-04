@@ -1,0 +1,21 @@
+//Summation of the quotient as a result of sum of two numbers raised to a power and the index as (((a+b)*(a+b))/2)+((a+b)*(a+b)*(a+b))/3) upto user input iteration.
+import java.util.Scanner;
+public class SumByExponents
+{
+  public static void main(String args[])
+  {
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Enter the sum of two numbers");
+    double a = sc.nextDouble();
+    double b = sc.nextDouble();
+    System.out.println("Enter the term");
+    double term = sc.nextDouble();
+    double increment, sum = 0.0, exponent;
+    for (increment = 1.0; increment <= term; increment++)
+    {
+      exponent = Math.pow((a+b) , (i+1));
+      sum = sum + exponent;
+    }
+    System.out.println(sum);
+  }
+}

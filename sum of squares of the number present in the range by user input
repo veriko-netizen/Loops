@@ -1,0 +1,58 @@
+*/Sum of squares of n numbers.
+Use all the kind of loops possible/*
+//while loop
+import java.util.Scanner;
+public class Sum
+{
+  public static void main(String args[])
+  {
+    Scanner sc= new Scanner(System.in);
+    System.out.println("Enter the maximum number");
+    int num= sc.nextInt();//The variable carries the number until which the sum has to be calculated.
+    int sum=0, i=1;
+    while(i<=num)
+    {
+      sum=sum+(i*i);//The sum is calculated till the time the loop runs.
+      i=i+1;//Increment order to keep up with the ongoing recurrence
+    }
+    System.out.println("The sum of the numbers:"+sum);
+  }
+}
+
+//for loop
+import java.util.Scanner;
+public class Sum
+{
+  public static void main(String args[])
+  {
+    Scanner sc= new Scanner(System.in);
+    System.out.println("Enter the maximum number");
+    int num= sc.nextInt();//user input term
+    int sum=0, i;
+    for(i=1; i<=n; i++)
+    {
+      sum=sum+(i*i);//sum is calculated till the time the recurrence does not stop.
+    }
+    System.out.println("The sum of the numbers:"+sum);
+  }
+}
+
+//do while loop
+import java.util.Scanner;
+public class Sum
+{
+  public static void main(String args[])
+  {
+    Scanner sc= new Scanner(System.in);
+    System.out.println("Enter the maximum number");
+    int num= sc.nextInt();//user input
+    int sum=0, i=1;
+    do
+    {
+      sum=sum+(i*i);//sum is calculated till the time recurrence occurs.
+      i=i+1;//Increment order
+    }
+    while(i<=num);
+    System.out.println("The sum of the numbers:"+sum);
+  }
+}

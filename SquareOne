@@ -1,0 +1,17 @@
+/*2,5,10,17
+Use a loop of your choice*/
+import java.util.Scanner;
+public class SquareDifference
+{
+  public static void main(String args[])
+  {
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Enter the maximum iterating term");
+    int term = sc.nextInt(), final, increment;
+    for(increment=1; increment<=term; increment++)
+    {
+      final = (increment*increment)+1;
+      System.out.print(final);
+    }
+  }
+}

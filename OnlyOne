@@ -1,0 +1,17 @@
+/*1,11,111,1111 upto n.
+Use a loop of your choice.*/
+import java.util.Scanner;
+public class OnlyOne
+{
+  public static void main(String args[])
+  {
+    Scanner sc = new Scanner(System.in);
+    System.out.println ("Enter the number of times the loop has to be iterated");
+    int term = sc.nextInt(), sum=0, increment;
+    for(increment=1; increment<=term; increment++)
+    {
+      sum = (sum*10)+increment;
+      System.out.print(sum);
+    }
+  }
+}

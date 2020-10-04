@@ -1,0 +1,26 @@
+*/Exponential of a number raised to the power of another number
+Use either of the loops./*
+import java.util.Scanner;
+public class Exponential
+{
+  public static void main(String args[])
+  {
+    Scanner sc= new Scanner(System.in);
+    System.out.println("Enter the number whose exponential has to be calculated");
+    int num=sc.nextInt();
+    System.out.println("Enter the highest power to be raised");
+    int power=sc.nextInt();
+    System.out.println("Enter the final highest power to which the previously calculated will be raised");
+    int finpower=sc.netInt();
+    int initpro=1, finpro=1, i, j;
+    for(i=1; i<=power; i++)
+    {
+      initpro=initpro*i;
+    }
+    for(j=1; j<=finpower; j++)
+    {
+      finpro=finpro*initpro
+    }
+    System.out.println("The outcome is:"+finpro);
+  }
+}

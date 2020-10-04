@@ -1,0 +1,64 @@
+*/Sum of square of numerator and denominator of fraction of n numbers.
+Use all the kind of loops possible/*
+//while loop
+import java.util.Scanner;
+public class Sum
+{
+  public static void main(String args[])
+  {
+    Scanner sc= new Scanner(System.in);
+    System.out.println("Enter the maximum number");
+    double num= sc.nextDouble();//The variable carries the number until which the sum has to be calculated.
+    double i=1.0, sum=0.0, deno, frac;
+    while(i<=num)
+    {
+      deno=((i+1.0)*(i+1.0));
+      frac=(i*i)/deno;
+      sum=sum+frac;//The sum is calculated till the time the loop runs.
+      i=i+1.0;//Increment order to keep up with the ongoing recurrence
+    }
+    System.out.println("The sum of the numbers:"+sum);
+  }
+}
+
+//for loop
+import java.util.Scanner;
+public class Sum
+{
+  public static void main(String args[])
+  {
+    Scanner sc= new Scanner(System.in);
+    System.out.println("Enter the maximum number");
+    double num= sc.nextDouble();//user input term
+    double i, sum=0.0, deno, frac;
+    for(i=1.0; i<num; i++)
+    {
+    deno=((i+1.0)*(i+1.0));
+    frac=(i*i)/deno;
+    sum=sum+frac;//The sum is calculated till the time the loop runs.
+    }
+    System.out.println("The sum of the numbers:"+sum);
+  }
+}
+
+//do while loop
+import java.util.Scanner;
+public class Sum
+{
+  public static void main(String args[])
+  {
+    Scanner sc= new Scanner(System.in);
+    System.out.println("Enter the maximum number");
+    double num= sc.nextDouble();//user input
+    double i=1.0,sum=0.0,frac,deno;
+    do
+    {
+    deno=((i+1.0)*(i+1.0));
+    frac=(i*i)/deno;
+    sum=sum+deno;//The sum is calculated till the time the loop runs.
+    i=i+1.0;//Increment order to keep up with the ongoing recurrence
+    }
+    while(i<num);
+    System.out.println("The sum of the numbers:"+sum);
+  }
+}

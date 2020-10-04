@@ -1,0 +1,31 @@
+//Accept a number and check if it is a special number or not
+import java.util.Scanner;
+public class Special
+{
+  public static void main(String args[])
+  {
+    Scanner sc = new Scanner(System.in);
+    int num = sc.nextInt();
+    int sto = num, digit, sum = 0;
+    while(sto!=0)
+    {
+      digit = sto%10;
+      sto = sto/10;
+      int factorial = 1, increment;
+      while(increment<=digit)
+      {
+        factorial = factorial*digit;
+        increment = increment + 1;
+      }
+      sum = sum + factorial;
+    }
+    if (sum == num)
+    {
+      System.out.println("It is a Special number");
+    }
+    else
+    {
+      System.out.println("It is not a Special number");
+    }
+  }
+}
